@@ -1,25 +1,48 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lan="en">
 <head>
-	<title>ARIA Role Implementation</title>
+	<meta charset="utf-8">
+	<title>My Portfolio</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
-	<h1>ARIA Roles</h1>
-	<nav>
-	  <ul>
-		<li>Items 1</li>
-		<li>Items 2</li>
-		<li>Items 3</li>
+	<header>
+		<h1>Saurav Jha's Portfolio</h1>
+	</header>
+	<nav role="navigation">
+	  <ul role="list">
+		<li role="listitem">
+			<a href="#about">About</a>
+		</li>
+		<li role="listitem">
+			<a href="projects">Projects</a>
+		</li>
+		<li role="listitem">
+			<a href="#contact">Contact</a>
+		</li>
 	  </ul>
 	</nav>
-	<img src="https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHJhbmRvbXx
-		lbnwwfHwwfHx8MA%3D%3D" alt="hot air balloons image">
-    <script type="text/javascript" src="./script.js">
+	<section id="about">
+		<h2 role="heading">About Me</h2>
+        <img role="img" src="profile.jpg" alt="Saurav's profile photo" />
+        <p>I’m a Full Stack Developer passionate about building web applications.</p>
+	</section>
+	 <section id="projects">
+    <h2 role="heading">Projects</h2>
+    <ul role="list">
+      <li role="listitem">Job Portal Website (MERN Stack)</li>
+      <li role="listitem">Dice Game using JavaScript</li>
+      <li role="listitem">E-commerce Website</li>
+    </ul>
+  </section>
+  <section id="contact">
+    <h2 role="heading">Contact</h2>
+    <p>Email: jhasaurav593@gmail.com</p>
+  </section>
+	
+  <script type="text/javascript" src="./script.js">
 </script>
 
 </body>
